@@ -2,117 +2,74 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scentia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="index.html">
-            <img src="img/logotipo" alt="Logotipo Scentia">
-        </a>
-        <a href="index.html">
-            <h1>SCENTIA</h1>
-        </a>
+        <div>
+            <a href="index.html">
+                <img src="img/logotipoScentia.png" alt="Logotipo Scentia" width="75" height="75">
+            </a>
+            <a href="index.html">
+                <h1>SCENTIA</h1>
+            </a>
+        </div>
         <div class="barra-busca">
             <input type="search" id="busca" name="busca" placeholder="O que você procura?">
             <button type="button">
                 <img src="img/pesquisar.svg" alt="Pesquisar" width="20" height="20">
             </button>
         </div>
-        <a href="compras.html">
-            <img src="img/carrinho.svg" alt="Carrinho">
-        </a>
-        <a href="">
-            <img src="img/usuario.svg" alt="Fazer login">
-        </a>
+        <div>
+            <a href="compras.html">
+                <img src="img/carrinho.svg" alt="Carrinho" width="30" height="30">
+            </a>
+            <a href="">
+                <img src="img/usuario.svg" alt="Fazer login" width="30" height="30">
+            </a>
+        </div>
     </header>
 
     <nav class="categorias">
-        <a href=""><p>PROMOÇÕES</p></a>
-        <a href=""><p>DESTAQUES</p></a>
-        <a href=""><p>MASCULINO</p></a>
-        <a href=""><p>FEMININO</p></a>
-        <a href=""><p>INFANTIL</p></a>
+        <ul>
+            <li><a href="">PROMOÇÕES</a></li>
+            <li><a href="">DESTAQUES</a></li>
+            <li><a href="">MASCULINO</a></li>
+            <li><a href="">FEMININO</a></li>
+            <li><a href="">INFANTIL</a></li>
+        </ul>
     </nav>
 
     <div class="banner">
-        <div class="slides">
-            <img src="img/produtox.webp" alt="Promoção 1">
-        </div>
+        <img src="img/produtox.webp" alt="Promoção 1">
+
+        <button class="seta anterior" type="button"><</button>
+        <button class="seta proximo" type="button">></button>
     </div>
 
     <div class="produtos">
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
-        <div class="produto">
-            <a href="produto.html">
-                <img src="img/produtox.webp" alt="produtox">
-                <p>Produto X</p>
-                <p>R$ 299,99</p>
-            </a>
-        </div>
+
+        <article class="produto">
+            <img src="img/produtox.webp" alt="produtox">
+            <div class="produto-corpo">
+                <div class="produto-titulo">
+                    <h2>
+                        <a href="produto.html" class="produto-link">Produto X</a>
+                    </h2>
+                    <div class="produto-avaliacao">
+                        <img src="img/estrela.svg" alt="Avaliação" width="15" height="15">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <p class="produto-preco">R$ 299,99</p>
+                <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+            </div>
+        </article>
+
     </div>
 
     <footer class="rodape">
