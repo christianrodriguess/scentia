@@ -19,16 +19,39 @@
 .barra-busca {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.barra-busca:hover {
+    border-color: black;
 }
 
 .barra-busca input {
-    width: 400px;
+    flex: 1;
+    min-width: 0;
     font-size: 16px;
-    border: 0;
-    border-radius: 5px;
-    padding: 10px;
+    border: none;
+    padding: 12px 16px;
     outline: none;
+}
+
+.barra-busca button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    align-self: stretch;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.barra-busca button:hover {
+    background-color: #f1f1f1;
 }
 
 .categorias {
@@ -72,7 +95,57 @@
 }
 
 .rodape {
+    margin-top: 100px;
+    border-top: 1px solid black;
+}
+
+.links-uteis, .informacoes-rodape {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    margin: 25px 50px;
+}
+
+.links-uteis ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-uteis a {
+    font-size: 17px;
+    margin-top: 15px;
+    display: block;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.links-uteis a:hover {
+    color: #212121;
+    text-decoration: underline;
+}
+
+.meios-pagamento {
+    display: flex;
+    gap: 25px;
+}
+
+.meios-pagamento img {
+    width: 40px;
+    height: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 50px;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid black;
 }
