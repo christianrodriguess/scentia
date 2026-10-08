@@ -1,1 +1,413 @@
-/* Estilos da aplicação */
+/* todas as páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #fafafa;
+}
+
+main {
+    margin-top: 120px;
+} 
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid #EEEEEE;
+    top: 0;
+}
+
+.cabecalho a {
+    color: black;
+    text-decoration: none;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.acoes-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+.barra-busca {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    background-color: #EEEEEE;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+.barra-busca:hover {
+    border-color: black;
+}
+
+.barra-busca input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 12px 16px;
+    outline: none;
+    background: transparent;
+}
+
+.barra-busca button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    align-self: stretch;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.barra-busca button:hover {
+    background-color: #e0e0e0;
+}
+
+.rodape {
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: white;
+    border-top: 1px solid #EEEEEE;
+}
+
+.links-uteis, .informacoes-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 50px;
+}
+
+.links-uteis a {
+    font-size: 17px;
+    margin-top: 15px;
+    display: block;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.links-uteis a:hover {
+    color: #212121;
+}
+
+.meios-pagamento {
+    display: flex;
+    gap: 25px;
+}
+
+.meios-pagamento img {
+    width: 40px;
+    height: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 50px;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #EEEEEE;
+}
+
+/* página principal */
+
+.categorias {
+    justify-self: center;
+    background-color: #F7ECE166;
+    padding: 12px;
+    width: 95%;
+    border-radius: 20px;
+    margin-top: 116px;
+}
+
+.categorias ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categorias a {
+    padding: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #AA3E98;
+}
+
+.categorias a:hover {
+    background-color: #FFFFFF80;
+}
+
+.banner {
+    position: relative;
+    margin: 30px 0;
+}
+
+.banner img {
+    display: block;
+    justify-self: center;
+}
+
+.seta {
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #EEEEEEB3;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+.bolinhas {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    gap: 10px;  
+}
+
+.bolinhas input {
+    display: none;
+}
+
+.bolinhas label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.bolinhas label:hover {
+    background-color: #AA3E98;
+}
+
+.bolinhas input:checked + label {
+    background-color: #AA3E98;
+    width: 28px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+
+.produto {
+    width: 220px;
+    height: 380px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px 12px 0 0;
+    margin: 20px;
+}
+
+.produto > img {
+    display: block;
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.produto-corpo {
+    padding: 5px;
+}
+
+.produto-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.produto-titulo a {
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.produto-preco {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.produto-avaliacao {
+    display: flex;
+    align-items: center;
+}
+
+.produto-botao {
+    display: block;
+    justify-self: center;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #9368B7;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.produto-botao:hover {
+    background-color: #794b9e;
+}
+
+/* manutenção de produtos */
+
+.produtos-cadastrados {
+    justify-self: center;
+    width: 75%;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    margin: 50px 0;
+    background-color: white;
+}
+
+.produtos-cadastrados table {
+    width: 100%;
+}
+
+.produtos-cadastrados td {
+    border-top: 1px solid #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cadastro-produto {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 75%;
+    row-gap: 25px;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    margin: 50px 0;
+    background-color: white;
+}
+
+.cadastro-produto label {
+    text-align: end;
+    padding: 10px;
+}
+
+.cadastro-produto input, 
+.cadastro-produto textarea  {
+    width: 90%;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px;
+    outline: none;
+}
+
+.cadastro-produto input:hover, 
+.cadastro-produto textarea:hover {
+    border-color: #4a4a4a;
+}
+
+.cadastro-produto input:focus, 
+.cadastro-produto textarea:focus {
+    border: 2px solid #AA3E98;
+}
+
+.cadastro-produto input[type="file"] {
+    width: auto;
+    justify-self: start;
+    border: none;
+}
+
+.campo-cadastro {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.botao {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.botao-cadastrar {
+    background-color: #9368B7;
+}
+
+.botao-salvar {
+    background-color: green;
+    color: white;
+}
+
+.botao-alterar {
+    background-color: #e0e0e0;
+}
+
+.botao-excluir {
+    background-color: #e0e0e0;
+    border: 1px solid red;
+    color: red;
+}
+
+/* histórico de compras */
+
+.compras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 20px 50px;
+
+}
+
+.compra h3 {
+    margin-bottom: 40px;
+}
+
+.compra {
+    display: flex;
+}

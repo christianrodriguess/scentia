@@ -1,20 +1,302 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Web</title>
+    <title>Scentia</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
+
 <body>
-    <header>
-        <h1>Título do Projeto</h1>
+    <header class="cabecalho">
+        <div class="logotipo">
+            <a href="index.html">
+                <img src="assets/img/logotipoScentia.png" alt="Logotipo Scentia" width="75" height="75">
+            </a>
+            <h1>
+                <a href="index.html">SCENTIA</a>
+            </h1>
+        </div>
+        <div class="barra-busca">
+            <input type="search" id="busca" name="busca" placeholder="O que você procura?">
+            <button type="submit">
+                <img src="assets/img/pesquisar.svg" alt="Pesquisar" width="20" height="20">
+            </button>
+        </div>
+        <div class="acoes-cabecalho">
+            <a href="pages/historico.html">
+                <img src="assets/img/carrinho.svg" alt="Carrinho" width="30" height="30">
+            </a>
+            <a href="">
+                <img src="assets/img/usuario.svg" alt="Fazer login" width="30" height="30">
+            </a>
+        </div>
     </header>
 
     <main>
-        <p>Estrutura inicial da aplicação.</p>
+
+        <nav class="categorias">
+            <ul>
+                <li><a href="">PROMOÇÕES</a></li>
+                <li><a href="">DESTAQUES</a></li>
+                <li><a href="">MASCULINO</a></li>
+                <li><a href="">FEMININO</a></li>
+                <li><a href="">INFANTIL</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <img src="assets/img/produtox.webp" alt="Promoção 1">
+
+            <button class="seta anterior" type="button"><</button>
+            <button class="seta proximo" type="button">></button>
+
+            <div class="bolinhas">
+                <input type="radio" name="carrosel" id="c1" checked>
+                <label for="c1"></label>
+                <input type="radio" name="carrosel" id="c2">
+                <label for="c2"></label>
+                <input type="radio" name="carrosel" id="c3">
+                <label for="c3"></label>
+            </div>
+        </div>
+
+        <div class="produtos">
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="produto">
+                <img src="assets/img/produtox.webp" alt="produtox">
+                <div class="produto-corpo">
+                    <div class="produto-titulo">
+                        <h2>
+                            <a href="pages/produto.html" class="produto-link">Produto X</a>
+                        </h2>
+                        <div class="produto-avaliacao">
+                            <img src="assets/img/estrela.png" alt="Avaliação" width="20" height="20">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <p class="produto-preco">R$ 299,99</p>
+                    <button class="produto-botao" type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+        </div>
+
     </main>
 
-    <script type="module" src="js/app.js"></script>
+    <footer class="rodape">
+        <div class="links-uteis">
+            <div>
+                <h3>Scentia</h3>
+                <ul>
+                    <li><a href="">Trabalhe conosco</a></li>
+                    <li><a href="">Sustentabilidade</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="">Perguntas frequentes</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="">Política de privacidade</a></li>
+                    <li><a href="">Trocas e devoluções</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="informacoes-rodape">
+            <div>
+                <h3>Meios de Pagamento</h3>
+                <div class="meios-pagamento">
+                    <img src="assets/img/elo.png" alt="Elo">
+                    <img src="assets/img/mastercard.png" alt="Mastercard">
+                    <img src="assets/img/visa.png" alt="Visa">
+                    <img src="assets/img/boleto.png" alt="Boleto">
+                    <img src="assets/img/pix.png" alt="Pix">
+                </div>
+            </div>
+            <div>
+                <h3>Siga-nos nas redes sociais</h3>
+                <div class="redes-sociais">
+                    <a href="">
+                        <img src="assets/img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="assets/img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="">
+                        <img src="assets/img/youtube.svg" alt="Youtube">
+                    </a>
+                    <a href="">
+                        <img src="assets/img/x-twitter.svg" alt="X">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>© Scentia. Todos os direitos reservados.</small>
+        </div>
+    </footer>
 </body>
+
 </html>
