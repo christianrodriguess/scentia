@@ -21,7 +21,7 @@
         </div>
         <div class="barra-busca">
             <input type="search" id="busca" name="busca" placeholder="O que você procura?">
-            <button type="submit">
+            <button class="botao botao-pesquisar" type="button">
                 <img src="../assets/img/pesquisar.svg" alt="Pesquisar" width="20" height="20">
             </button>
         </div>
@@ -29,8 +29,8 @@
             <a href="historico.html">
                 <img src="../assets/img/carrinho.svg" alt="Carrinho" width="30" height="30">
             </a>
-            <a href="">
-                <img src="../assets/img/usuario.svg" alt="Fazer login" width="30" height="30">
+            <a href="manutencao.html">
+                <img src="../assets/img/configuracoes.svg" alt="Configurações" width="30" height="30">
             </a>
         </div>
     </header>
@@ -40,10 +40,15 @@
 
         <div class="produtos-cadastrados">
             <h3>Produtos cadastrados</h3>
-            <label for="pesquisar-produto">Pesquisar produto</label>
-            <input type="search" name="pesquisar-produto" id="pesquisar-produto">
-            <button class="" type="button">a</button>
-            <button class="botao botao-cadastrar" type="button">Cadastrar novo</button>
+            <div class="pesquisar-cadastrar-produto">
+                <div class="barra-busca">
+                    <input type="search" name="pesquisar-produto" id="pesquisar-produto" placeholder="Pesquisar produto">
+                    <button class="botao botao-pesquisar" type="button">
+                        <img src="../assets/img/pesquisar.svg" alt="Pesquisar" width="20" height="20">
+                    </button>
+                </div>
+                <button class="botao botao-cadastrar" type="button">Cadastrar novo</button>
+            </div>
 
             <table>
                 <thead>
