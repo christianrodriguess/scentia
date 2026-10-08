@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# SCENTIA
 
 `CURSO: Ciência da Computação`
 
@@ -10,13 +10,14 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-- Nome completo do aluno 1
-- Nome completo do aluno 2
-- Nome completo do aluno 3
+- Christian Mateus da Silveira Rodrigues
+- Gabriel Oliveira Guedes
+- João Pedro Velho Gil
 
 ## Orientador
 
-- Nome completo do professor
+- Diego Roberto Gonçalves de Pontes 
+- Fabiano Costa Teixeira
 
 # Sobre o projeto
 
