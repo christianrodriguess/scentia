@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Título do Projeto"
+message: "Se utilizar este projeto, cite-o conforme as informações deste arquivo."
+type: software
+authors:
+  - family-names: "Sobrenome"
+    given-names: "Nome"
+version: 0.1.0
+date-released: 2026-08-20
