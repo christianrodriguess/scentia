@@ -1,3 +1,5 @@
+/* todas as páginas */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +9,11 @@
 body {
     background-color: #fafafa;
 }
+
 main {
     margin-top: 120px;
 } 
+
 ul {
     list-style: none;
     padding: 0;
@@ -84,6 +88,59 @@ ul {
 .barra-busca button:hover {
     background-color: #e0e0e0;
 }
+
+.rodape {
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: white;
+    border-top: 1px solid #EEEEEE;
+}
+
+.links-uteis, .informacoes-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 50px;
+}
+
+.links-uteis a {
+    font-size: 17px;
+    margin-top: 15px;
+    display: block;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.links-uteis a:hover {
+    color: #212121;
+}
+
+.meios-pagamento {
+    display: flex;
+    gap: 25px;
+}
+
+.meios-pagamento img {
+    width: 40px;
+    height: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 50px;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #EEEEEE;
+}
+
+/* página principal */
 
 .categorias {
     justify-self: center;
@@ -183,6 +240,7 @@ ul {
 .produto {
     width: 220px;
     height: 380px;
+    background-color: white;
     border-radius: 12px;
     border: 1px solid #EEEEEE;
     border-radius: 12px 12px 0 0;
@@ -196,7 +254,6 @@ ul {
 }
 
 .produto-corpo {
-    background-color: white;
     padding: 5px;
 }
 
@@ -240,56 +297,104 @@ ul {
     background-color: #794b9e;
 }
 
-.rodape {
-    margin-top: 100px;
-    padding-top: 20px;
+/* manutenção de produtos */
+
+.produtos-cadastrados {
+    justify-self: center;
+    width: 75%;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    margin: 50px 0;
     background-color: white;
+}
+
+.produtos-cadastrados table {
+    width: 100%;
+}
+
+.produtos-cadastrados td {
     border-top: 1px solid #EEEEEE;
-}
-
-.links-uteis, .informacoes-rodape {
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 50px;
-}
-
-.links-uteis a {
-    font-size: 17px;
-    margin-top: 15px;
-    display: block;
-    color: #4a4a4a;
-    text-decoration: none;
-}
-
-.links-uteis a:hover {
-    color: #212121;
-}
-
-.meios-pagamento {
-    display: flex;
-    gap: 25px;
-}
-
-.meios-pagamento img {
-    width: 40px;
-    height: 25px;
-}
-
-.redes-sociais {
-    display: flex;
-    gap: 50px;
-}
-
-.redes-sociais img {
-    width: 40px;
-    height: 40px;
-}
-
-.copyright {
     text-align: center;
-    padding: 5px 0;
-    border-top: 1px solid #EEEEEE;
+    padding: 20px 0;
 }
+
+.cadastro-produto {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 75%;
+    row-gap: 25px;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    margin: 50px 0;
+    background-color: white;
+}
+
+.cadastro-produto label {
+    text-align: end;
+    padding: 10px;
+}
+
+.cadastro-produto input, 
+.cadastro-produto textarea  {
+    width: 90%;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px;
+    outline: none;
+}
+
+.cadastro-produto input:hover, 
+.cadastro-produto textarea:hover {
+    border-color: #4a4a4a;
+}
+
+.cadastro-produto input:focus, 
+.cadastro-produto textarea:focus {
+    border: 2px solid #AA3E98;
+}
+
+.cadastro-produto input[type="file"] {
+    width: auto;
+    justify-self: start;
+    border: none;
+}
+
+.campo-cadastro {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.botao {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.botao-cadastrar {
+    background-color: #9368B7;
+}
+
+.botao-salvar {
+    background-color: green;
+    color: white;
+}
+
+.botao-alterar {
+    background-color: #e0e0e0;
+}
+
+.botao-excluir {
+    background-color: #e0e0e0;
+    border: 1px solid red;
+    color: red;
+}
+
+/* histórico de compras */
+
 .compras {
     display: flex;
     flex-direction: column;
@@ -298,10 +403,11 @@ ul {
     margin: 20px 50px;
 
 }
+
 .compra h3 {
     margin-bottom: 40px;
 }
+
 .compra {
     display: flex;
 }
-compra
