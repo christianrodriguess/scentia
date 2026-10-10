@@ -243,19 +243,36 @@ ul {
 }
 
 .produto {
+    position: relative;
     width: 220px;
     height: 380px;
     background-color: white;
-    border-radius: 12px;
     border: 1px solid #EEEEEE;
     border-radius: 12px 12px 0 0;
     margin: 20px;
 }
 
-.produto > img {
+.produto-imagem {
+    position: relative;
+    z-index: 2;
+}
+
+.produto-imagem img {
     display: block;
-    border-radius: 12px 12px 0 0;
     width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.imagem-frente {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.produto-imagem:hover .imagem-frente{
+    opacity: 1;
 }
 
 .produto-corpo {
@@ -276,6 +293,13 @@ ul {
     color: black;
 }
 
+.produto-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
 .produto-preco {
     font-weight: bold;
     margin-bottom: 30px;
@@ -287,15 +311,15 @@ ul {
 }
 
 .produto-botao {
+    position: relative;
+    z-index: 2;
     display: block;
     justify-self: center;
+    text-align: center;
+    text-decoration: none;
     width: 90%;
-    padding: 10px;
-    border: none;
     color: white;
     background-color: #9368B7;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 .produto-botao:hover {
@@ -303,6 +327,11 @@ ul {
 }
 
 /* manutenção de produtos */
+
+.titulo-manutencao {
+    justify-self: center;
+    width: 75%;
+}
 
 .produtos-cadastrados {
     justify-self: center;
@@ -333,14 +362,19 @@ ul {
     background-color: #8256a5;
 }
 
-.produtos-cadastrados table {
+.tabela-container {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.tabela-container table {
     width: 100%;
 }
 
 .produtos-cadastrados th,
 .produtos-cadastrados td {
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .produtos-cadastrados td {
