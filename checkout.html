@@ -8,7 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
+    <main>
+        <form class="checkout" action="historico.html">
 
+            <section class="caixa checkout-produto">
+                <img src="img/perfume1.png" alt="perfume1" width="75" height="75">
+                <p>TITULO DO PRODUTO</p>
+                <p>Quantidade: 1</p>
+            </section>
+
+            <section class="caixa checkout-pagamento">
+                <h2>Método de pagamento</h2>
+                <label><input type="radio" name="pagamento" checked> Cartão de crédito</label>
+                <label><input type="radio" name="pagamento"> Pix</label>
+                <label><input type="radio" name="pagamento"> Boleto</label>
+            </section>
+
+            <section class="caixa checkout-dados">
+                <h2>Dados da compra</h2>
+                <div class="campo-checkout">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                </div>
+                <div class="campo-checkout">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" placeholder="00000-000" required>
+                </div>
+                <div class="campo-checkout">
+                    <label for="cartao">Número do cartão</label>
+                    <input type="text" id="cartao" placeholder="0000 0000 0000 0000" required>
+                </div>
+                <div class="campo-checkout">
+                    <label for="validade">Validade</label>
+                    <input type="text" id="validade" placeholder="MM/AA" required>
+                </div>
+                <div class="campo-checkout">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123" required>
+                </div>
+            </section>
+
+            <p class="checkout-total">Preço final: R$299,99</p>
+            <button type="submit" class="botao-finalizar">Finalize agora</button>
+
+        </form>
+    </main>
 <body>
     <header class="cabecalho">
         <div class="logotipo">
@@ -34,11 +78,6 @@
             </a>
         </div>
     </header>
-
-    
-
-
-
     <footer class="rodape">
         <div class="links-uteis">
             <div>
