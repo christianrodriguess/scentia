@@ -463,19 +463,65 @@ ul {
 
 /* histórico de compras */
 
+.compra {
+    display: flex;
+    /*pra centralizar e alinhar os elementos da compra*/
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #9368B780;
+    border-radius: 20px;
+    margin: 20px;
+    max-width:700px;
+    width: 100%;
+
+}
 .compras {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    margin: 20px 50px;
-
+    align-items: center;
+}
+.compra a{
+    text-decoration: none;
+    color: #9368B7;
+}
+.compra a:hover{
+    color: #794b9e;
+    text-decoration: underline;
 }
 
-.compra h3 {
-    margin-bottom: 40px;
+.compra-corpo h3 {
+color: #9368B7;
+font-size: 25px;
+margin-bottom: 5px;
+
+}
+.compra-corpo p {
+    margin-bottom: 5px;
 }
 
-.compra {
-    display: flex;
+main h2{
+    text-align: center;
+    margin-bottom: 20px;
+    Font-size: 30px;
+    color: #794b9e;
+}
+.status-entregue {
+    color: #218838;
+    padding: 5px;
+    background-color : #d4edda;
+    border radius: 5px;
+}
+.precoTotal {
+    font-weight: bold;
+    font-size: 15px;
+    color: #9368B7;
+}
+.status-recusado{
+    color: red;
+    padding: 5px;
+    background-color : #f8d7da;
+    border radius: 5px;
 }
