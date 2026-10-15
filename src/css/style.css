@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -104,7 +104,8 @@ ul {
     border-top: 1px solid #EEEEEE;
 }
 
-.links-uteis, .informacoes-rodape {
+.links-uteis,
+.informacoes-rodape {
     display: flex;
     justify-content: space-between;
     margin: 25px 50px;
@@ -213,7 +214,7 @@ ul {
     bottom: 10px;
     left: 0;
     right: 0;
-    gap: 10px;  
+    gap: 10px;
 }
 
 .bolinhas input {
@@ -233,7 +234,7 @@ ul {
     background-color: #AA3E98;
 }
 
-.bolinhas input:checked + label {
+.bolinhas input:checked+label {
     background-color: #AA3E98;
     width: 28px;
 }
@@ -276,7 +277,7 @@ ul {
     transition: 0.3s;
 }
 
-.produto-imagem:hover .imagem-frente{
+.produto-imagem:hover .imagem-frente {
     opacity: 1;
 }
 
@@ -354,7 +355,7 @@ ul {
 }
 
 .pesquisar-cadastrar-produto {
-    display: flex; 
+    display: flex;
     gap: 25px;
     margin-bottom: 40px;
 }
@@ -422,8 +423,8 @@ ul {
     padding: 10px;
 }
 
-.cadastro-produto input, 
-.cadastro-produto textarea  {
+.cadastro-produto input,
+.cadastro-produto textarea {
     width: 90%;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -431,12 +432,12 @@ ul {
     outline: none;
 }
 
-.cadastro-produto input:hover, 
+.cadastro-produto input:hover,
 .cadastro-produto textarea:hover {
     border-color: #4a4a4a;
 }
 
-.cadastro-produto input:focus, 
+.cadastro-produto input:focus,
 .cadastro-produto textarea:focus {
     border: 2px solid #AA3E98;
 }
@@ -463,6 +464,19 @@ ul {
 
 /* histórico de compras */
 
+.titulo-historico {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #794b9e;
+}
+
+.compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .compra {
     display: flex;
     flex-direction: row;
@@ -473,91 +487,90 @@ ul {
     border: 2px solid #9368B780;
     border-radius: 20px;
     margin: 20px;
-    max-width:700px;
+    max-width: 700px;
     width: 100%;
+}
 
-}
-.compras {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.compra a{
+.compra a {
     text-decoration: none;
     color: #9368B7;
+    background-color: #F7ECE1;
+    border-radius: 5px;
 }
-.compra a:hover{
-    color: gold;
-    text-decoration: underline;
+
+.compra a:hover {
+    font-weight: bold;
+    color: #1D1128;
 }
 
 .compra-corpo h3 {
-color: #9368B7;
-font-size: 25px;
-margin-bottom: 5px;
-
+    color: #9368B7;
+    font-size: 25px;
+    margin-bottom: 5px;
 }
+
 .compra-corpo p {
     margin-bottom: 5px;
 }
-main h2{
-    text-align: center;
-    margin-bottom: 20px;
-    Font-size: 30px;
-    color: #794b9e;
-}
+
 .status-entregue {
     color: #218838;
     padding: 5px;
-    background-color : #d4edda;
+    background-color: #d4edda;
     border-radius: 5px;
 }
+
 .precoTotal {
     font-weight: bold;
     font-size: 15px;
     color: #9368B7;
 }
-.status-recusado{
+
+.status-recusado {
     color: red;
     padding: 5px;
-    background-color : #f8d7da;
+    background-color: #f8d7da;
     border-radius: 5px;
 }
 
 /* Avaliação de compra */
 
-.pagina-avaliacao{
+.pagina-avaliacao {
     max-width: 400px;
     margin: 0 auto;
 }
-.produto-avaliado{
- display: flex;
- align-items: center;
- gap: 15px;  
- background-color: white;
- padding: 15px;
- border: 3px solid #9368B780; 
- border-radius: 10px;
- max-width: 500px;
- margin: 20px auto;
+
+.produto-avaliado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 15px;
+    border: 3px solid #9368B780;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
 }
-.estrelas{
+
+.estrelas {
     display: flex;
     gap: 5px;
     margin-bottom: 15px;
 }
-.form-avaliação{
+
+.form-avaliacao {
     display: flex;
     flex-direction: column;
     gap: 15px;
     background-color: white;
     padding: 15px;
-    border: 3px solid #9368B780; 
+    border: 3px solid #9368B780;
     border-radius: 10px;
     max-width: 500px;
     margin: 20px auto;
 }
-.form-avaliação textarea{
+
+.form-avaliacao textarea {
     width: 100%;
     height: 100px;
     border-radius: 10px;
@@ -565,18 +578,20 @@ main h2{
     padding: 10px;
     outline: none;
 }
+
 .botao-avaliar {
     justify-self: center;
     background-color: #9368B7;
     color: white;
 }
+
 .botao-avaliar:hover {
     background-color: #794b9e;
 }
 
 /* página do produto */
 
-main > .produto {
+main>.produto {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -591,7 +606,7 @@ main > .produto {
     border-radius: 20px;
 }
 
-.FOTOS {
+.fotos {
     display: grid;
     grid-template-columns: auto auto;
     align-items: start;
@@ -630,7 +645,6 @@ main > .produto {
 
 .infos h1 {
     font-size: 28px;
-    font-weight: normal;
     color: black;
 }
 
@@ -660,7 +674,7 @@ main > .produto {
     background-color: #794b9e;
 }
 
-.DETALHES,
+.detalhes,
 .avaliacoes {
     width: 95%;
     margin: 0 auto 30px;
@@ -669,13 +683,13 @@ main > .produto {
     border-radius: 20px;
 }
 
-.DETALHES h2,
+.detalhes h2,
 .avaliacoes h2 {
     margin-bottom: 12px;
     color: #AA3E98;
 }
 
-.DETALHES p,
+.detalhes p,
 .avaliacoes p {
     line-height: 1.6;
 }
@@ -683,15 +697,11 @@ main > .produto {
 .botao-avaliacao {
     width: 25%;
 }
+
 .avaliacoes h1 {
     font-size: 32px;
     margin-bottom: 4px;
     color: black;
-}
-
-.estrelas {
-    color: #F5A623;
-    letter-spacing: 2px;
 }
 
 .botao-avaliacao {
@@ -765,12 +775,12 @@ main > .produto {
     color: black;
 }
 
-.avaliacoes h3 ~ h3 {
+.avaliacoes h3~h3 {
     padding-top: 16px;
     border-top: 1px solid #EEEEEE;
 }
 
-.avaliacoes h3 + p {
+.avaliacoes h3+p {
     font-size: 14px;
     color: #666666;
 }
