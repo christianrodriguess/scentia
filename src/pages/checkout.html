@@ -46,9 +46,11 @@
 
             <section class="caixa checkout-pagamento">
                 <h2>Método de pagamento</h2>
-                <label><input type="radio" name="pagamento" checked> Cartão de crédito</label>
-                <label><input type="radio" name="pagamento"> Pix</label>
-                <label><input type="radio" name="pagamento"> Boleto</label>
+                <select name="Pagamento" id="Pagamento">
+                    <option value="cartaodecredito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto bancário</option>
+                    <option value="pix">PIX</option>
+                </select>
             </section>
 
             <section class="caixa checkout-dados">
@@ -73,10 +75,11 @@
                     <label for="cvv">CVV</label>
                     <input type="text" id="cvv" placeholder="123">
                 </div>
-            </section>
 
-            <p class="checkout-total">Preço final: R$299,99</p>
+                <p class="checkout-total">Preço final: R$299,99</p>
             <button type="submit" class="botao-finalizar">Finalize agora</button>
+            
+            </section>
 
         </form>
     </main>
